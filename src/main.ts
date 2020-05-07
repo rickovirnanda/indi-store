@@ -7,6 +7,7 @@ const port = process.env.PORT || 3030;
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors();
   app.setGlobalPrefix('api');
 
   const options = new DocumentBuilder()
