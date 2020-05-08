@@ -25,7 +25,7 @@ export class CategoryService {
     }
 
     async read(id:number){
-        return await this.categoryRepository.findOne({ where: { id } })
+        return await this.categoryRepository.findOne({ where: { id:`${id}` } })
     }
 
     async update(id:number, data:Partial<Category>)

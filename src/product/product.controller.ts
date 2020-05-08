@@ -18,7 +18,7 @@ export class ProductController {
     }
 
     @Get(':id')
-    readProduct(@Param() id:number){
+    readProduct(@Param('id') id:number){
         return this.productService.read(id);
     }
 

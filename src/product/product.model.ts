@@ -1,5 +1,5 @@
 export class Product{
-    id:string;
+    id:number;
     name:string;
     created:Date;
     stock:number;
@@ -10,7 +10,7 @@ export class Product{
 
     constructor()
     {
-        this.id = "";
+        this.id = 0;
         this.name = "";
         this.created = new Date();
         this.stock = 0;

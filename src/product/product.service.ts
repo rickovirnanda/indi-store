@@ -24,7 +24,7 @@ export class ProductService {
     }
 
     async read(id:number){
-        return await this.productRepository.findOne({ where: { id } })
+        return await this.productRepository.findOne({ where: { id:`${id}` } })
     }
 
     async update(id:number, data:Partial<Product>)
