@@ -10,7 +10,7 @@ export class ProductEntity{
     name:string;
 
     @CreateDateColumn()
-    created:Date;
+    createdDate:Date;
 
     @Column()
     stock:number;
@@ -24,9 +24,9 @@ export class ProductEntity{
     @Column()
     imageUrl:string;
     
-    @Column({ default: true })
-    isActive:boolean;
+    @Column({ default: 0 })
+    isDeleted:number;
 
     @ManyToOne(type=>CategoryEntity, category=>category.products)
-    category:CategoryEntity[];
+    category:CategoryEntity;
 }

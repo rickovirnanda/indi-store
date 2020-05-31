@@ -1,8 +1,10 @@
 
 {
-  "type": "sqlite",
-  "database": "database.db",
-  "entities": ["dist/**/*.entity{.ts,.js}"],
-  "logging":true,
-  "synchronize": true
+  "type": "mysql",
+  "host": "35.198.192.80",
+  "port": 3306,
+  "username": "indi",
+  "password": "indistore",
+  "database": "indistore",
+  "entities": ["dist/**/*.entity{.ts,.js}"]
 }

@@ -11,6 +11,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
 
   const options = new DocumentBuilder()
+    .addBearerAuth()
     .setTitle('Indri Store Web API')
     .setDescription('I sell, you buy')
     .setVersion('0.0.1')
